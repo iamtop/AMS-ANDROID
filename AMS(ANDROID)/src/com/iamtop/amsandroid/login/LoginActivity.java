@@ -2,9 +2,7 @@ package com.iamtop.amsandroid.login;
 
 
 import com.iamtop.amsandroid.R;
-import com.iamtop.amsandroid.R.id;
-import com.iamtop.amsandroid.R.layout;
-import com.iamtop.amsandroid.R.menu;
+
 
 import android.app.Activity;
 import android.os.Bundle;
