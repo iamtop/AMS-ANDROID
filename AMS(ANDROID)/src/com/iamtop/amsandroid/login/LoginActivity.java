@@ -1,13 +1,19 @@
 package com.iamtop.amsandroid.login;
 
 
+import org.litepal.crud.DataSupport;
+import org.litepal.tablemanager.Connector;
+
 import com.iamtop.amsandroid.R;
+import com.iamtop.amsandroid.managementboard.department.DepartmentActivity;
 
 
 import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class LoginActivity extends Activity {
 
@@ -15,6 +21,26 @@ public class LoginActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+		
+		SQLiteDatabase db = Connector.getDatabase();
+		
+		DepartmentActivity dept=new DepartmentActivity();
+		dept.setDeptCode("1001");
+		dept.setDeptName("Pabitra");
+		dept.save();
+		DepartmentActivity dept1=new DepartmentActivity();
+		dept1.setDeptCode("1002");
+		dept1.setDeptName("Raju");
+		dept1.save();
+		
+		dept.setDeptCode("1003");
+		dept.update(1);
+		DataSupport.delete(DepartmentActivity.class, 1);
+		TextView txt1=(TextView) findViewById(R.id.dept1);
+		TextView txt2=(TextView) findViewById(R.id.dept2);
+		txt1.setText(dept1.getDeptCode());
+		txt2.setText(dept.getDeptName());
+		
 	}
 
 	@Override
