@@ -1,19 +1,18 @@
 package com.iamtop.amsandroid.login;
 
 
-import org.litepal.crud.DataSupport;
-import org.litepal.tablemanager.Connector;
+
 
 import com.iamtop.amsandroid.R;
-import com.iamtop.amsandroid.managementboard.department.DepartmentActivity;
+
 
 
 import android.app.Activity;
-import android.database.sqlite.SQLiteDatabase;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+
 
 public class LoginActivity extends Activity {
 
