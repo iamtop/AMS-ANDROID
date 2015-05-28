@@ -34,5 +34,6 @@
     <list>
         
         <mapping class="com.iamtop.amsandroid.managementboard.department.DepartmentActivity"></mapping>
+        <mapping class="com.iamtop.amsandroid.managementboard.student.StudentDetailsActivity"></mapping>
     </list>
 </litepal>

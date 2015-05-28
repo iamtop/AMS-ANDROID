@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         android:name="org.litepal.LitePalApplication" >
         <activity
-            android:name="com.iamtop.amsandroid.login.LoginActivity"
+            android:name="com.iamtop.amsandroid.managementboard.semester.BatchActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
