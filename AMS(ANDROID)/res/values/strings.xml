@@ -4,16 +4,16 @@
     <string name="app_name">AMS(ANDROID)</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
-                <!--Login Page  -->
+
+    <!-- Login Page -->
     <string name="title_activity_login">Login Here</string>
-    
-    
-                <!--Home Page  -->
+
+    <!-- Home Page -->
     <string name="title_activity_home">Home</string>
     <string name="logout">Logout</string>
     <string name="mngBtn">Management</string>
     <string name="taskMgr">Task Manager</string>
     <string name="attendance">Attendance</string>
+    <string name="title_activity_task_manager">TaskManagerActivity</string>
 
 </resources>
