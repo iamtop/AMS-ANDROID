@@ -2,15 +2,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
     tools:context="com.iamtop.amsandroid.home.HomeActivity" >
-
-    <TextView
+    
+    
+    
+    <ImageView 
+        android:id="@+id/header_image"
+        android:layout_alignParentTop="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_height="80dp"
+        android:src="@drawable/header_image"/>
+    <Button
+        android:id="@+id/mng_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/header_image"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/mngBtn"
+        android:background="@drawable/buttonshape"
+        android:onClick="goToManagement"/>
+    <Button
+        android:id="@+id/task_mgr_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/mng_btn"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/taskMgr"
+        android:background="@drawable/buttonshape"
+        android:onClick="goToTaskManager"/>
+    <Button
+        android:id="@+id/attendance_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/task_mgr_btn"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/attendance"
+        android:background="@drawable/buttonshape"
+        android:onClick="goToAttendance"/>
+    
+    <ImageView 
+        android:id="@+id/footer_image"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/footer_page"
+        android:onClick="goToWebsite"/>
+
+    
 
 </RelativeLayout>
