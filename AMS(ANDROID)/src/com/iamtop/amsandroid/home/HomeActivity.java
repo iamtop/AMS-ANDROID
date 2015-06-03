@@ -35,7 +35,7 @@ public class HomeActivity extends Activity {
    public void goToAttendance(View v){
 		
 	}
-   public void goToWebsite(View v){
+   public void goToIamTopWebsite(View v){
 	  
 	   Intent i = new Intent(Intent.ACTION_VIEW, 
 		       Uri.parse("http://iamtop.net/"));

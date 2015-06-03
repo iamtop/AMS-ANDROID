@@ -53,7 +53,7 @@
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
         android:src="@drawable/footer_page"
-        android:onClick="goToWebsite"/>
+        android:onClick="goToIamTopWebsite"/>
 
     
 
