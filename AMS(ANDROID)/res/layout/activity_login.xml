@@ -23,34 +23,51 @@
 
     <TableRow
         android:id="@+id/tableRow2"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center" 
         android:layout_marginTop="110dp">
+        
+        <RelativeLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             >        
 
         <EditText
             android:id="@+id/editText1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="#ffff"
-
             android:gravity="center" 
-            android:hint="USER NAME" >
+            android:hint="User Name" >
+            </EditText>
+            <ImageView
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:background="@drawable/unm" 
+               android:layout_marginTop="2dp">
+           </ImageView>
             
-        </EditText>
+         </RelativeLayout>
     </TableRow>
 
     <!-- Row3 Column3 -->
 
     <TableRow
         android:id="@+id/tableRow3"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
         android:gravity="center">
+        
+        <RelativeLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             >        
+        
 
          <EditText
             android:id="@+id/editText2"
-            android:layout_width="40dp"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="#ffff"
             android:ems="10"
@@ -58,6 +75,14 @@
             android:gravity="center"
             android:layout_marginTop="10dp">
             </EditText>
+            
+          <ImageView
+               android:layout_width="35dp"
+               android:layout_height="35dp"
+               android:background="@drawable/pwd"
+               android:layout_marginTop="12dp" >
+           </ImageView>
+            </RelativeLayout>
     </TableRow>
 
     <!-- Row4 Column1 -->
@@ -72,9 +97,7 @@
         android:background="#000"
         android:alpha=".6" />
 
-    <LinearLayout>
+  
 
-        
-    </LinearLayout>
 
 </TableLayout>
