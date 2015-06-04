@@ -15,5 +15,6 @@
     <string name="taskMgr">Task Manager</string>
     <string name="attendance">Attendance</string>
     <string name="title_activity_task_manager">TaskManagerActivity</string>
+    <string name="title_activity_attendance">AttendanceActivity</string>
 
 </resources>

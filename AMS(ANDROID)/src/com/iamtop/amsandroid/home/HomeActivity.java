@@ -1,7 +1,10 @@
 package com.iamtop.amsandroid.home;
 
 import com.iamtop.amsandroid.R;
+import com.iamtop.amsandroid.attendance.AttendanceActivity;
 import com.iamtop.amsandroid.login.LoginActivity;
+import com.iamtop.amsandroid.taskmanager.TaskManager;
+import com.iamtop.amsandroid.taskmanager.TaskManagerActivity;
 
 
 import android.support.v7.app.ActionBarActivity;
@@ -30,9 +33,13 @@ public class HomeActivity extends Activity {
 	}
 	
    public void goToTaskManager(View v){
+	   Intent intent=new Intent(HomeActivity.this,TaskManagerActivity.class);
+	   startActivity(intent);
 		
 	}
    public void goToAttendance(View v){
+	   Intent intent=new Intent(HomeActivity.this ,AttendanceActivity.class);
+	   startActivity(intent);
 		
 	}
    public void goToIamTopWebsite(View v){

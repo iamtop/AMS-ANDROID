@@ -5,6 +5,7 @@ import com.iamtop.amsandroid.R.id;
 import com.iamtop.amsandroid.R.layout;
 import com.iamtop.amsandroid.R.menu;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,6 +17,8 @@ public class TaskManagerActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_task_manager);
+		ActionBar actionBar=getActionBar();
+		actionBar.show();
 	}
 
 	@Override
@@ -30,10 +33,13 @@ public class TaskManagerActivity extends Activity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+		switch (item.getItemId()) {
+		case R.id.log_out:
+		return true;
+		
+
+		default:
+			return super.onOptionsItemSelected(item);
 		}
-		return super.onOptionsItemSelected(item);
 	}
 }
