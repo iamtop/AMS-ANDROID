@@ -16,5 +16,12 @@
     <string name="attendance">Attendance</string>
     <string name="title_activity_task_manager">TaskManagerActivity</string>
     <string name="title_activity_attendance">AttendanceActivity</string>
+    
+    <!-- Login -->
+    <string name="ULogin">Login</string>
+    <string name="UserName">UserEmail</string>
+    <string name="Password">Password</string>
+    <string name="Uforgot">Forgot Password?</string>
+    <string name="Usignin">Sign in</string>
 
 </resources>
