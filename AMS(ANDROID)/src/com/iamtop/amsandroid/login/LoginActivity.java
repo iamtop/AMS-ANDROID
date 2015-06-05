@@ -7,20 +7,51 @@ import com.iamtop.amsandroid.R;
 
 
 
-import android.app.Activity;
 
+
+import com.iamtop.amsandroid.home.HomeActivity;
+
+
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class LoginActivity extends Activity {
-
+	private EditText userEmail;
+	private EditText password;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 		
+	}
+	
+	public void getHomePage(View view) {
+		userEmail = (EditText) findViewById(R.id.editText1);
+		password = (EditText) findViewById(R.id.editText2);
+		
+		if ((userEmail.getText().toString().trim().equals("admin"))&&(password.getText().toString().trim().equals("123456"))) {
+			//userEmail.setError("Email is required!");
+			Intent i = new Intent(LoginActivity.this,
+					HomeActivity.class);
+			startActivity(i);
+			
+		} else if  (userEmail.getText().toString().trim().equals(""))
+		{ 
+			Toast.makeText(getApplicationContext(), "Email is required!", Toast.LENGTH_LONG).show();
+			//userEmail.setError("Email is required!");
+		}else if
+			(password.getText().toString().trim().equals("")) {
+			Toast.makeText(getApplicationContext(), "Password is required!", Toast.LENGTH_LONG).show();
+			//password.setError("Password is required!");
+		}
 	}
 
 	@Override

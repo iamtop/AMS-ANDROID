@@ -95,7 +95,8 @@
         android:text="@string/Usignin"
         android:textColor="#FFF"
         android:background="#000"
-        android:alpha=".6" />
+        android:alpha=".6"
+        android:onClick="getHomePage" />
 
   
 
