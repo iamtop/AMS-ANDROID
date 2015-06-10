@@ -68,9 +68,9 @@ public class HomeActivity extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		switch (item.getItemId()) {
 		case R.id.log_out:
-			
-			Intent intent=new Intent(HomeActivity.this,LoginActivity.class);
-			startActivity(intent);
+			finish();
+			/*Intent intent=new Intent(HomeActivity.this,LoginActivity.class);
+			startActivity(intent);*/
 			return true;
 		
 	default:

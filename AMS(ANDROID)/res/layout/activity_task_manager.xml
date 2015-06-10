@@ -2,8 +2,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     tools:context="com.iamtop.amsandroid.taskmanager.TaskManagerActivity" >
-
     
+    
+
+    <ImageButton
+        android:id="@+id/asign_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/task_icon" />
+    
+   <TextView 
+       android:id="@+id/heading_teacher_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/asign_task"
+       android:paddingTop="10dp"
+       android:paddingLeft="10dp"
+       android:text="@string/heading_teacher_name"
+       android:textColor="#BA68C8"/>
+   <TextView 
+       android:id="@+id/heading_line"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/heading_teacher_name"
+       android:paddingLeft="10dp"
+       android:text="@string/heading_line"
+       android:textColor="#BA68C8"/>
+   
+   
+
+   <ListView
+       android:id="@+id/task_list"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignTop="@+id/heading_line"
+       android:paddingLeft="10dp"
+       android:paddingTop="10dp"
+       android:cacheColorHint="#BA68C8" >
+   </ListView>
 
 </RelativeLayout>

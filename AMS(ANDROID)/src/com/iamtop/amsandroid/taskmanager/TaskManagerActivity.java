@@ -4,9 +4,11 @@ import com.iamtop.amsandroid.R;
 import com.iamtop.amsandroid.R.id;
 import com.iamtop.amsandroid.R.layout;
 import com.iamtop.amsandroid.R.menu;
+import com.iamtop.amsandroid.login.LoginActivity;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -35,6 +37,7 @@ public class TaskManagerActivity extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		switch (item.getItemId()) {
 		case R.id.log_out:
+			
 		return true;
 		
 
