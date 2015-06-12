@@ -6,8 +6,6 @@ import org.litepal.tablemanager.Connector;
 
 
 import com.iamtop.amsandroid.R;
-import com.iamtop.amsandroid.managementboard.department.DepartmentActivity;
-
 import android.app.Activity;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -20,7 +18,7 @@ public class BatchActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_batch);
 		
-		TextView txt1=(TextView)findViewById(R.id.dept_code);
+		/*TextView txt1=(TextView)findViewById(R.id.dept_code);
 		TextView txt2=(TextView)findViewById(R.id.dept_name);
 		SQLiteDatabase db=Connector.getDatabase();
 		db.beginTransaction();
@@ -33,7 +31,7 @@ public class BatchActivity extends Activity{
 	    dept2.setDeptCode("1002");
 	    dept2.update(1);
 	    
-	    txt1.setText(dept2.getDeptCode());
+	    txt1.setText(dept2.getDeptCode());*/
 		
 	}
 	

@@ -1,4 +1,4 @@
-package com.iamtop.amsandroid.managementboard.subject;
+package com.iamtop.amsandroid.managementboard.designation;
 
 import com.iamtop.amsandroid.R;
 
@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class SubjectActivity extends Activity {
+public class RoleAssign extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_subject);
+		setContentView(R.layout.activity_role_assign);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.subject, menu);
+		getMenuInflater().inflate(R.menu.role_assign, menu);
 		return true;
 	}
 

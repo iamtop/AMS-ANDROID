@@ -15,17 +15,30 @@
     <string name="taskMgr">Task Manager</string>
     <string name="attendance">Attendance</string>
     <string name="title_activity_attendance">Attendance</string>
-    
+
     <!-- Login -->
     <string name="ULogin">Login</string>
     <string name="UserName">UserEmail</string>
     <string name="Password">Password</string>
     <string name="Uforgot">Forgot Password?</string>
     <string name="Usignin">Sign in</string>
-    
-    <!--Task Manager  -->
+
+    <!-- Management -->
+
+    <string name=" Authority"> Authority</string>
+    <string name="Department">Department</string>
+    <string name="RoleAsign">RoleAsign</string>
+    <string name="Batch">Batch</string>
+    <string name="Student">Student</string>
+    <string name="Subject">Subject</string>
+
+    <!-- Task Manager -->
     <string name="title_activity_task_manager">Task Manager</string>
     <string name="heading_teacher_name">Teacher Name</string>
     <string name="heading_line">_______________</string>
+    <string name="title_activity_authority_details">AuthorityDetails</string>
+    <string name="title_activity_department">Department</string>
+    <string name="title_activity_role_assign">RoleAssign</string>
+    <string name="title_activity_subject">SubjectActivity</string>
 
 </resources>

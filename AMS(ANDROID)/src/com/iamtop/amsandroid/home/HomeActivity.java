@@ -3,6 +3,7 @@ package com.iamtop.amsandroid.home;
 import com.iamtop.amsandroid.R;
 import com.iamtop.amsandroid.attendance.AttendanceActivity;
 import com.iamtop.amsandroid.login.LoginActivity;
+import com.iamtop.amsandroid.managementboard.tab.TabLayout;
 import com.iamtop.amsandroid.taskmanager.TaskManager;
 import com.iamtop.amsandroid.taskmanager.TaskManagerActivity;
 
@@ -29,6 +30,8 @@ public class HomeActivity extends Activity {
 	}
 	
 	public void goToManagement(View v){
+		 Intent intent=new Intent(HomeActivity.this,TabLayout.class);
+		 startActivity(intent);
 		
 	}
 	

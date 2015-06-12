@@ -2,9 +2,11 @@ package com.iamtop.amsandroid.managementboard.student;
 
 import org.litepal.crud.DataSupport;
 
-public class StudentDetailsActivity extends DataSupport{
+import android.app.Activity;
+
+public class StudentDetailsActivity extends Activity{
 	
-	private String studId;
+	/*private String studId;
 	private String studName;
 	private String semester;
 	private String dept;
@@ -31,7 +33,7 @@ public class StudentDetailsActivity extends DataSupport{
 	}
 	public void setDept(String dept) {
 		this.dept = dept;
-	}
+	}*/
 	
 
 }
