@@ -8,7 +8,7 @@ public class TaskManager {
 	private String deptName;
 	private String semName;
 	private String subName;
-	private String fName;
+	private String fname;
 	public String getTaskDate() {
 		return taskDate;
 	}
@@ -45,11 +45,11 @@ public class TaskManager {
 	public void setSubName(String subName) {
 		this.subName = subName;
 	}
-	public String getfName() {
-		return fName;
+	public String getfname() {
+		return fname;
 	}
-	public void setfName(String fName) {
-		this.fName = fName;
+	public void setfname(String fname) {
+		this.fname = fname;
 	}
 	public String getlName() {
 		return lName;

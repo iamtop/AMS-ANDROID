@@ -35,8 +35,8 @@
 
         <!--
         <activity
-            android:name="com.iamtop.amsandroid.home.HomeActivity"
-            android:label="@string/title_activity_home" >
+            android:name="com.iamtop.amsandroid.taskmanager.TaskDetailsActivity"
+           >
         </activity>
         -->
        
@@ -48,6 +48,8 @@
             android:name=".taskmanager.TaskManagerActivity"
             android:label="@string/title_activity_task_manager" >
         </activity>
+        
+        
         <activity
             android:name=".attendance.AttendanceActivity"
             android:label="@string/title_activity_attendance" >
