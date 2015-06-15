@@ -40,5 +40,6 @@
     <string name="title_activity_department">Department</string>
     <string name="title_activity_role_assign">RoleAssign</string>
     <string name="title_activity_subject">SubjectActivity</string>
+    <string name="title_activity_role_asign_adapter">RoleAsignAdapter</string>
 
 </resources>

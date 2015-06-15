@@ -37,19 +37,15 @@
         <activity
             android:name="com.iamtop.amsandroid.taskmanager.TaskDetailsActivity"
            >
-        </activity>
+        </activity>
         -->
-       
-       
-        
+
         <activity android:name=".managementboard.tab.TabLayout" >
         </activity>
         <activity
             android:name=".taskmanager.TaskManagerActivity"
             android:label="@string/title_activity_task_manager" >
         </activity>
-        
-        
         <activity
             android:name=".attendance.AttendanceActivity"
             android:label="@string/title_activity_attendance" >
@@ -70,15 +66,13 @@
             android:name=".managementboard.subject.SubjectActivity"
             android:label="@string/title_activity_subject" >
         </activity>
-        
-        <activity
-            android:name=".managementboard.student.StudentDetailsActivity"
-            >
+        <activity android:name=".managementboard.student.StudentDetailsActivity" >
         </activity>
-        
+        <activity android:name=".managementboard.semester.BatchActivity" >
+        </activity>
         <activity
-            android:name=".managementboard.semester.BatchActivity"
-             >
+            android:name="com.iamtop.amsandroid.managementboard.designation.RoleAsignAdapter"
+            android:label="@string/title_activity_role_asign_adapter" >
         </activity>
     </application>
 

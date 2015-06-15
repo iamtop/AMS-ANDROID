@@ -3,7 +3,7 @@ package com.iamtop.amsandroid.managementboard.tab;
 import com.iamtop.amsandroid.R;
 import com.iamtop.amsandroid.managementboard.Authority.AuthorityDetails;
 import com.iamtop.amsandroid.managementboard.department.Department;
-import com.iamtop.amsandroid.managementboard.designation.RoleAssign;
+import com.iamtop.amsandroid.managementboard.designation.RoleAssignActivity;
 import com.iamtop.amsandroid.managementboard.semester.BatchActivity;
 import com.iamtop.amsandroid.managementboard.student.StudentDetailsActivity;
 import com.iamtop.amsandroid.managementboard.subject.SubjectActivity;
@@ -42,7 +42,7 @@ import android.widget.TabHost.TabSpec;
 
 			
 			TabSpec tab2 = tabHost.newTabSpec("RoleAsign");
-			Intent i2 = new Intent(TabLayout.this, RoleAssign.class);
+			Intent i2 = new Intent(TabLayout.this, RoleAssignActivity.class);
 			tab2.setIndicator(getResources().getString(R.string.RoleAsign));
 			tab2.setContent(i2);
 			

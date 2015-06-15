@@ -1,19 +1,29 @@
 package com.iamtop.amsandroid.taskmanager;
 
+
+
+import java.util.concurrent.ExecutionException;
+
 import com.iamtop.amsandroid.R;
-import com.iamtop.amsandroid.R.id;
-import com.iamtop.amsandroid.R.layout;
-import com.iamtop.amsandroid.R.menu;
-import com.iamtop.amsandroid.login.LoginActivity;
+
+import com.iamtop.amsandroid.utilities.GetOperation;
+import com.iamtop.amsandroid.utilities.JsonHelper;
+
+
 
 import android.app.ActionBar;
 import android.app.Activity;
-import android.content.Intent;
+
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 public class TaskManagerActivity extends Activity {
+	
+	TaskManagerAdapter adapter;
+	ListView listView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +31,25 @@ public class TaskManagerActivity extends Activity {
 		setContentView(R.layout.activity_task_manager);
 		ActionBar actionBar=getActionBar();
 		actionBar.show();
+		
+		listView=(ListView)findViewById(R.id.task_list);
+		String serverUrl=com.iamtop.amsandroid.urls.UrlInfo.ALL_TASK;
+		AsyncTask<String, Void, String>allTask=new GetOperation().execute(serverUrl);
+		try{
+			TaskManager[] tasks=(TaskManager[]) JsonHelper.toObject(allTask.get(), TaskManager[].class);
+	        adapter=new TaskManagerAdapter(TaskManagerActivity.this, tasks);
+			listView.setAdapter(adapter);
+			
+			
+			
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 	@Override

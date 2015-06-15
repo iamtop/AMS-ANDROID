@@ -1,24 +1,27 @@
 package com.iamtop.amsandroid.managementboard.designation;
 
 import com.iamtop.amsandroid.R;
+import com.iamtop.amsandroid.R.id;
+import com.iamtop.amsandroid.R.layout;
+import com.iamtop.amsandroid.R.menu;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class RoleAssign extends Activity {
+public class RoleAsignAdapter extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_role_assign);
+		setContentView(R.layout.activity_role_asign_adapter);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.role_assign, menu);
+		getMenuInflater().inflate(R.menu.role_asign_adapter, menu);
 		return true;
 	}
 
