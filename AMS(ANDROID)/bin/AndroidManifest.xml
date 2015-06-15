@@ -40,7 +40,8 @@
         </activity>
        
 
-        <activity android:name=".managementboard.tab.TabLayout" >
+        <activity 
+            android:name=".managementboard.tab.TabLayout" >
         </activity>
         <activity
             android:name=".taskmanager.TaskManagerActivity"
@@ -51,7 +52,7 @@
             android:label="@string/title_activity_attendance" >
         </activity>
         <activity
-            android:name=".managementboard.authority.AuthorityDetails"
+            android:name=".managementboard.authority.AuthorityActivity"
             android:label="@string/title_activity_authority_details" >
         </activity>
         <activity
