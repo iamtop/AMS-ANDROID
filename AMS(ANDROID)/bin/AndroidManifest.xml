@@ -33,12 +33,12 @@
             android:label="@string/title_activity_login" >
         </activity>
 
-        <!--
+        
         <activity
             android:name="com.iamtop.amsandroid.taskmanager.TaskDetailsActivity"
            >
         </activity>
-        -->
+       
 
         <activity android:name=".managementboard.tab.TabLayout" >
         </activity>
@@ -51,7 +51,7 @@
             android:label="@string/title_activity_attendance" >
         </activity>
         <activity
-            android:name=".managementboard.Authority.AuthorityDetails"
+            android:name=".managementboard.authority.AuthorityDetails"
             android:label="@string/title_activity_authority_details" >
         </activity>
         <activity
@@ -59,7 +59,7 @@
             android:label="@string/title_activity_department" >
         </activity>
         <activity
-            android:name=".managementboard.designation.RoleAssign"
+            android:name="com.iamtop.amsandroid.managementboard.designation.RoleAssignActivity"
             android:label="@string/title_activity_role_assign" >
         </activity>
         <activity
@@ -70,10 +70,10 @@
         </activity>
         <activity android:name=".managementboard.semester.BatchActivity" >
         </activity>
-        <activity
+        <!-- <activity
             android:name="com.iamtop.amsandroid.managementboard.designation.RoleAsignAdapter"
             android:label="@string/title_activity_role_asign_adapter" >
-        </activity>
+        </activity> -->
     </application>
 
 </manifest>

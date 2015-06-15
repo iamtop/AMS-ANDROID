@@ -1,4 +1,4 @@
-package com.iamtop.amsandroid.managementboard.Authority;
+package com.iamtop.amsandroid.managementboard.authority;
 
 import com.iamtop.amsandroid.R;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class AuthorityDetails extends Activity {
+public class AuthorityActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

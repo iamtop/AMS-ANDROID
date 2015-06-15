@@ -1,18 +1,47 @@
 package com.iamtop.amsandroid.managementboard.designation;
 
+import java.util.concurrent.ExecutionException;
+
 import com.iamtop.amsandroid.R;
 
+import com.iamtop.amsandroid.utilities.GetOperation;
+import com.iamtop.amsandroid.utilities.JsonHelper;
+
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 public class RoleAssignActivity extends Activity {
+	RoleAsignAdapter adapter;
+	ListView listView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_role_assign);
+		
+		listView=(ListView) findViewById(R.id.role_list);
+		String serverUrl=com.iamtop.amsandroid.urls.UrlInfo.ALL_ROLE;
+		AsyncTask<String, Void, String>allRole=new GetOperation().execute(serverUrl);
+		try{
+			RoleAssign[] roles=(RoleAssign[]) JsonHelper.toObject(allRole.get(), RoleAssign[].class);
+	        adapter=new RoleAsignAdapter(RoleAssignActivity.this, roles);
+			listView.setAdapter(adapter);
+			
+			
+			
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	
 	}
 
 	@Override

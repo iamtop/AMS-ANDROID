@@ -1,39 +1,52 @@
 package com.iamtop.amsandroid.managementboard.designation;
 
 import com.iamtop.amsandroid.R;
-import com.iamtop.amsandroid.R.id;
-import com.iamtop.amsandroid.R.layout;
-import com.iamtop.amsandroid.R.menu;
+
+
 
 import android.app.Activity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
-public class RoleAsignAdapter extends Activity {
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_role_asign_adapter);
+public class RoleAsignAdapter extends ArrayAdapter<RoleAssign> {
+	private final Activity context;
+	private final RoleAssign[] roles;
+	
+	public RoleAsignAdapter(Activity context,RoleAssign[] roles){
+		super(context,R.layout.activity_role_asign_adapter ,roles);
+		this.context=context;
+		this.roles=roles;
+		
 	}
-
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.role_asign_adapter, menu);
-		return true;
-	}
-
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+	public View getView(int position, View view, ViewGroup parent){
+		View rowView=view;
+		final ViewHolder holder;
+		if (rowView == null) {
+			rowView = context.getLayoutInflater().inflate(
+					R.layout.activity_role_asign_adapter, parent, false);
+			holder = new ViewHolder();
+			holder.roleCode = (TextView) rowView.findViewById(R.id.role_code);
+			holder.roleName=(TextView) rowView.findViewById(R.id.role_name);
+			
+			rowView.setTag(holder);
 		}
-		return super.onOptionsItemSelected(item);
+		else {
+			holder = (ViewHolder) rowView.getTag();
+		}
+		holder.roleCode.setText(roles[position].getRoleCode());
+		holder.roleName.setText(roles[position].getRoleName());
+		return rowView;
 	}
+	
+	private class ViewHolder {
+		public TextView roleCode;
+		public TextView roleName;
+	}
+
+	
+
 }

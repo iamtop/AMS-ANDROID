@@ -38,7 +38,7 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_alignParentLeft="true"
-       android:layout_alignTop="@+id/heading_line"
+       android:layout_below="@id/heading_line"
        android:paddingLeft="10dp"
        android:paddingTop="10dp"
        android:cacheColorHint="#BA68C8" >

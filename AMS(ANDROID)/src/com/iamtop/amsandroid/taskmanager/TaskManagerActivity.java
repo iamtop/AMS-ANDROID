@@ -66,7 +66,7 @@ public class TaskManagerActivity extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		switch (item.getItemId()) {
 		case R.id.log_out:
-			
+			//write the logic for logout here
 		return true;
 		
 

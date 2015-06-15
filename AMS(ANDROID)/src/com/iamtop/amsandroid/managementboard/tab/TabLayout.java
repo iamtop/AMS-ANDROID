@@ -1,7 +1,7 @@
 package com.iamtop.amsandroid.managementboard.tab;
 
 import com.iamtop.amsandroid.R;
-import com.iamtop.amsandroid.managementboard.Authority.AuthorityDetails;
+import com.iamtop.amsandroid.managementboard.authority.AuthorityActivity;
 import com.iamtop.amsandroid.managementboard.department.Department;
 import com.iamtop.amsandroid.managementboard.designation.RoleAssignActivity;
 import com.iamtop.amsandroid.managementboard.semester.BatchActivity;
@@ -30,7 +30,7 @@ import android.widget.TabHost.TabSpec;
 
 			
 			TabSpec tab = tabHost.newTabSpec("Authority");
-			Intent i = new Intent(TabLayout.this,AuthorityDetails.class);
+			Intent i = new Intent(TabLayout.this,AuthorityActivity.class);
 			tab.setIndicator(getResources().getString(R.string.Authority));;
 			tab.setContent(i);
 
