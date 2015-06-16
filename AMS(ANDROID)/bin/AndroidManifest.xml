@@ -32,16 +32,9 @@
             android:name=".home.HomeActivity"
             android:label="@string/title_activity_login" >
         </activity>
-
-        
-        <activity
-            android:name="com.iamtop.amsandroid.taskmanager.TaskDetailsActivity"
-           >
-        </activity>
-       
-
-        <activity 
-            android:name=".managementboard.tab.TabLayout" >
+        <activity android:name=".taskmanager.TaskDetailsActivity" >
+        </activity>
+        <activity android:name=".managementboard.tab.TabLayout" >
         </activity>
         <activity
             android:name=".taskmanager.TaskManagerActivity"
@@ -60,7 +53,7 @@
             android:label="@string/title_activity_department" >
         </activity>
         <activity
-            android:name="com.iamtop.amsandroid.managementboard.designation.RoleAssignActivity"
+            android:name=".managementboard.designation.RoleAssignActivity"
             android:label="@string/title_activity_role_assign" >
         </activity>
         <activity
@@ -69,12 +62,22 @@
         </activity>
         <activity android:name=".managementboard.student.StudentDetailsActivity" >
         </activity>
-        <activity android:name=".managementboard.semester.BatchActivity" >
+        <activity android:name=".managementboard.semester.SemesterActivity" >
         </activity>
-        <!-- <activity
+        <!--
+        <activity
             android:name="com.iamtop.amsandroid.managementboard.designation.RoleAsignAdapter"
             android:label="@string/title_activity_role_asign_adapter" >
-        </activity> -->
+        </activity>
+        -->
+        <activity
+            android:name=".managementboard.semester.SemesterAdapter"
+            android:label="@string/title_activity_semester_adapter" >
+        </activity>
+        <activity
+            android:name="com.iamtop.amsandroid.managementboard.semester.SemesterActivity"
+            android:label="@string/title_activity_semester" >
+        </activity>
     </application>
 
 </manifest>

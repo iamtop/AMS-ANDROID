@@ -4,7 +4,7 @@ import com.iamtop.amsandroid.R;
 import com.iamtop.amsandroid.managementboard.authority.AuthorityActivity;
 import com.iamtop.amsandroid.managementboard.department.Department;
 import com.iamtop.amsandroid.managementboard.designation.RoleAssignActivity;
-import com.iamtop.amsandroid.managementboard.semester.BatchActivity;
+import com.iamtop.amsandroid.managementboard.semester.SemesterActivity;
 import com.iamtop.amsandroid.managementboard.student.StudentDetailsActivity;
 import com.iamtop.amsandroid.managementboard.subject.SubjectActivity;
 
@@ -47,7 +47,7 @@ import android.widget.TabHost.TabSpec;
 			tab2.setContent(i2);
 			
 			TabSpec tab3 = tabHost.newTabSpec("Batch");
-			Intent i3 = new Intent(TabLayout.this, BatchActivity.class);
+			Intent i3 = new Intent(TabLayout.this, SemesterActivity.class);
 			tab3.setIndicator(getResources().getString(R.string.Batch));
 			tab3.setContent(i3);
 			

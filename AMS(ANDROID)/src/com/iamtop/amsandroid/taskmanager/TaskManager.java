@@ -1,7 +1,21 @@
 package com.iamtop.amsandroid.taskmanager;
 
 public class TaskManager {
+	private String id;
 	
+	private String taskDate;
+	private String slotStartTime;
+	private String slotEndTime;
+	private String deptName;
+	private String semName;
+	private String subName;
+	private String fname;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
 	public String getTaskDate() {
 		return taskDate;
 	}
@@ -44,12 +58,6 @@ public class TaskManager {
 	public void setFname(String fname) {
 		this.fname = fname;
 	}
-	private String taskDate;
-	private String slotStartTime;
-	private String slotEndTime;
-	private String deptName;
-	private String semName;
-	private String subName;
-	private String fname;
+	
 	
 }

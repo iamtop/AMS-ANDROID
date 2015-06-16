@@ -30,22 +30,27 @@
     <string name="Batch">Batch</string>
     <string name="Student">Student</string>
     <string name="Subject">Subject</string>
-    
+
     <!-- RoleAssignment -->
     <string name="role_code_heading">Role Code</string>
     <string name="role_name_heading">Role Name</string>
+    
+    <!-- Semester -->
+    <string name="sem_id_heading">Semester ID</string>
+    <string name="sem_name_heading">Semester Name</string>
 
     <!-- Task Manager -->
     <string name="title_activity_task_manager">Task Manager</string>
     <string name="heading_teacher_name">Teacher Name</string>
-    
     <string name="title_activity_authority_details">AuthorityDetails</string>
     <string name="title_activity_department">Department</string>
     <string name="title_activity_role_assign">RoleAssign</string>
     <string name="title_activity_subject">SubjectActivity</string>
     <string name="title_activity_role_asign_adapter">RoleAsignAdapter</string>
-    
-    <!--Others  -->
+
+    <!-- Others -->
     <string name="heading_line">_______________</string>
+    <string name="title_activity_semester_adapter">SemesterAdapter</string>
+    <string name="title_activity_semester">SemesterActivity</string>
 
 </resources>
