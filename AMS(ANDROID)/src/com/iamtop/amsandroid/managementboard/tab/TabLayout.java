@@ -2,7 +2,7 @@ package com.iamtop.amsandroid.managementboard.tab;
 
 import com.iamtop.amsandroid.R;
 import com.iamtop.amsandroid.managementboard.authority.AuthorityActivity;
-import com.iamtop.amsandroid.managementboard.department.Department;
+import com.iamtop.amsandroid.managementboard.department.DepartmentActivity;
 import com.iamtop.amsandroid.managementboard.designation.RoleAssignActivity;
 import com.iamtop.amsandroid.managementboard.semester.SemesterActivity;
 import com.iamtop.amsandroid.managementboard.student.StudentDetailsActivity;
@@ -36,7 +36,7 @@ import android.widget.TabHost.TabSpec;
 
 			
 			TabSpec tab1 = tabHost.newTabSpec("Department");
-			Intent i1 = new Intent(TabLayout.this, Department.class);
+			Intent i1 = new Intent(TabLayout.this, DepartmentActivity.class);
 			tab1.setIndicator(getResources().getString(R.string.Department));
 			tab1.setContent(i1);
 

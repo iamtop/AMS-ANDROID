@@ -34,7 +34,7 @@
     <!-- RoleAssignment -->
     <string name="role_code_heading">Role Code</string>
     <string name="role_name_heading">Role Name</string>
-    
+
     <!-- Semester -->
     <string name="sem_id_heading">Semester ID</string>
     <string name="sem_name_heading">Semester Name</string>
@@ -52,5 +52,6 @@
     <string name="heading_line">_______________</string>
     <string name="title_activity_semester_adapter">SemesterAdapter</string>
     <string name="title_activity_semester">SemesterActivity</string>
+    <string name="title_activity_department_adapter">DepartmentAdapter</string>
 
 </resources>

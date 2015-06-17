@@ -49,7 +49,7 @@
             android:label="@string/title_activity_authority_details" >
         </activity>
         <activity
-            android:name=".managementboard.department.Department"
+            android:name=".managementboard.department.DepartmentActivity"
             android:label="@string/title_activity_department" >
         </activity>
         <activity
@@ -62,22 +62,17 @@
         </activity>
         <activity android:name=".managementboard.student.StudentDetailsActivity" >
         </activity>
-        <activity android:name=".managementboard.semester.SemesterActivity" >
-        </activity>
-        <!--
-        <activity
-            android:name="com.iamtop.amsandroid.managementboard.designation.RoleAsignAdapter"
-            android:label="@string/title_activity_role_asign_adapter" >
-        </activity>
-        -->
+     
+
         <activity
             android:name=".managementboard.semester.SemesterAdapter"
             android:label="@string/title_activity_semester_adapter" >
         </activity>
         <activity
-            android:name="com.iamtop.amsandroid.managementboard.semester.SemesterActivity"
+            android:name=".managementboard.semester.SemesterActivity"
             android:label="@string/title_activity_semester" >
         </activity>
+  
     </application>
 
 </manifest>
