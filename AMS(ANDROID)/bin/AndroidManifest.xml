@@ -62,8 +62,6 @@
         </activity>
         <activity android:name=".managementboard.student.StudentDetailsActivity" >
         </activity>
-     
-
         <activity
             android:name=".managementboard.semester.SemesterAdapter"
             android:label="@string/title_activity_semester_adapter" >
@@ -72,7 +70,7 @@
             android:name=".managementboard.semester.SemesterActivity"
             android:label="@string/title_activity_semester" >
         </activity>
-  
+      
     </application>
 
 </manifest>

@@ -53,5 +53,6 @@
     <string name="title_activity_semester_adapter">SemesterAdapter</string>
     <string name="title_activity_semester">SemesterActivity</string>
     <string name="title_activity_department_adapter">DepartmentAdapter</string>
+    <string name="title_activity_subject_adapter">SubjectAdapter</string>
 
 </resources>
