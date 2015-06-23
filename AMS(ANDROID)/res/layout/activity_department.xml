@@ -9,8 +9,34 @@
     tools:context="com.iamtop.amsandroid.Department" >
 
     <TextView
+        android:id="@+id/dept_code_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/dept_code" />
+    <TextView
+        android:id="@+id/dept_code_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dept_code_heading"
+        android:text="@string/heading_line" />
+    <TextView
+        android:id="@+id/dept_name_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/dept_name" />
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dept_name_heading"
+        android:layout_alignParentRight="true"
+        android:text="@string/heading_line" />
+     <ListView 
+         android:id="@+id/dept_list"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/dept_code_line">
+         
+     </ListView>
 
 </RelativeLayout>

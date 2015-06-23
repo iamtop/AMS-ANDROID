@@ -9,8 +9,21 @@
     tools:context="com.iamtop.amsandroid.managementboard.department.DepartmentAdapter" >
 
     <TextView
+        android:id="@+id/dept_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/hello_world"
+       android:textColor="#FFAA34"
+        />
+    <TextView
+        android:id="@+id/dept_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dept_code"
+        android:paddingLeft="55dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/hello_world"
+      
+        android:textColor="#FFAA34" />
 
 </RelativeLayout>

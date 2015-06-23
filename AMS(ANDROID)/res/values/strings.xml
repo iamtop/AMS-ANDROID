@@ -38,6 +38,10 @@
     <!-- Semester -->
     <string name="sem_id_heading">Semester ID</string>
     <string name="sem_name_heading">Semester Name</string>
+    
+    <!--Department  -->
+    <string name="dept_code">Dept Code</string>
+    <string name="dept_name">Dept Name</string>
 
     <!-- Task Manager -->
     <string name="title_activity_task_manager">Task Manager</string>
