@@ -51,6 +51,13 @@
     <string name="title_activity_role_assign">RoleAssign</string>
     <string name="title_activity_subject">SubjectActivity</string>
     <string name="title_activity_role_asign_adapter">RoleAsignAdapter</string>
+    <string name="slot_start">Slot Start Time :</string>
+    <string name="slot_end">Slot End Time :</string>
+    <string name="task_date">Date :</string>
+    <string name="task_dept_name">Department:</string>
+    <string name="task_sem_name">Semester Name :</string>
+    <string name="task_sub_name">Subject Name :</string>
+    <string name="task_teacher_name">Teacher Name :</string>
 
     <!-- Others -->
     <string name="heading_line">_______________</string>

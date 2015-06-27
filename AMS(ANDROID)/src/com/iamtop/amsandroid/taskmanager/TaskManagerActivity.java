@@ -11,13 +11,17 @@ import com.iamtop.amsandroid.utilities.JsonHelper;
 
 
 
+
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class TaskManagerActivity extends Activity {
@@ -36,9 +40,24 @@ public class TaskManagerActivity extends Activity {
 		String serverUrl=com.iamtop.amsandroid.urls.UrlInfo.ALL_TASK;
 		AsyncTask<String, Void, String>allTask=new GetOperation().execute(serverUrl);
 		try{
-			TaskManager[] tasks=(TaskManager[]) JsonHelper.toObject(allTask.get(), TaskManager[].class);
+			final TaskManager[] tasks=(TaskManager[]) JsonHelper.toObject(allTask.get(), TaskManager[].class);
 	        adapter=new TaskManagerAdapter(TaskManagerActivity.this, tasks);
 			listView.setAdapter(adapter);
+			
+			listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+				@Override
+				public void onItemClick(AdapterView<?> parent, View view,
+						int position, long id) {
+					
+					// pass Data to other Activity
+					Intent i = new Intent(TaskManagerActivity.this,
+							TaskDetailsActivity.class);
+					// i.putStringArrayListExtra("productData", productData);
+					i.putExtra("teachId", tasks[position].getId());
+					
+					startActivity(i);
+				}
+			});
 			
 			
 			

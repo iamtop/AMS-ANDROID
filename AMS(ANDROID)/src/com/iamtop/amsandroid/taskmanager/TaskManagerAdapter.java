@@ -38,7 +38,7 @@ public class TaskManagerAdapter extends ArrayAdapter<TaskManager>{
 		else {
 			holder = (ViewHolder) rowView.getTag();
 		}
-		holder.teacher.setText(taskArray[position].getTaskDate());
+		holder.teacher.setText(taskArray[position].getFname()+"   "+taskArray[position].getLname());
 		return rowView;
 	}
 	

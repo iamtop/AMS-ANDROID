@@ -7,9 +7,10 @@ public class TaskManager {
 	private String slotStartTime;
 	private String slotEndTime;
 	private String deptName;
-	private String semName;
+	private String SemName;
 	private String subName;
 	private String fname;
+	private String lname;
 	public String getId() {
 		return id;
 	}
@@ -40,12 +41,7 @@ public class TaskManager {
 	public void setDeptName(String deptName) {
 		this.deptName = deptName;
 	}
-	public String getSemName() {
-		return semName;
-	}
-	public void setSemName(String semName) {
-		this.semName = semName;
-	}
+	
 	public String getSubName() {
 		return subName;
 	}
@@ -57,6 +53,18 @@ public class TaskManager {
 	}
 	public void setFname(String fname) {
 		this.fname = fname;
+	}
+	public String getLname() {
+		return lname;
+	}
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+	public String getSemName() {
+		return SemName;
+	}
+	public void setSemName(String semName) {
+		SemName = semName;
 	}
 	
 	
