@@ -1,24 +1,27 @@
 package com.iamtop.amsandroid.managementboard.authority;
 
 import com.iamtop.amsandroid.R;
+import com.iamtop.amsandroid.R.id;
+import com.iamtop.amsandroid.R.layout;
+import com.iamtop.amsandroid.R.menu;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class AuthorityActivity extends Activity {
+public class AuthorityAdapter extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_authority);
+		setContentView(R.layout.activity_authority_adapter);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.authority, menu);
+		getMenuInflater().inflate(R.menu.authority_adapter, menu);
 		return true;
 	}
 

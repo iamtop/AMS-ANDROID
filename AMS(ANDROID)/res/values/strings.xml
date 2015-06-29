@@ -38,8 +38,8 @@
     <!-- Semester -->
     <string name="sem_id_heading">Semester ID</string>
     <string name="sem_name_heading">Semester Name</string>
-    
-    <!--Department  -->
+
+    <!-- Department -->
     <string name="dept_code">Dept Code</string>
     <string name="dept_name">Dept Name</string>
 
@@ -65,5 +65,6 @@
     <string name="title_activity_semester">SemesterActivity</string>
     <string name="title_activity_department_adapter">DepartmentAdapter</string>
     <string name="title_activity_subject_adapter">SubjectAdapter</string>
+    <string name="title_activity_authority_adapter">AuthorityAdapter</string>
 
 </resources>
